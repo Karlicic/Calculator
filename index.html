@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-grid.css" rel="stylesheet">
+    <link href="css/bootstrap-reboot.css" rel="stylesheet">
+    <link href="css/bootstrap-utilities.css" rel="stylesheet">
+
+</head>
+<body>
+    <div id="calculator">
+        <div class="row">
+            <input id="calculator-screen" type="text" dir="rtl" value="" disabled />
+        </div>
+        <div class="row">
+            <div class="col-sm-3 w-25 p-3 text-center">
+                <button type="button" class="btn btn-danger btn-costume-lg" onclick="clearAll()">C</button>
+            </div>
+            <div class="col-sm-3 w-25 p-3 text-center">
+                <button type="button" class="btn btn-light btn-costume-lg" onclick="clearLast()">Del</button>
+            </div>
+            <div class="col-sm-3 w-25 p-3 text-center">
+                <button type="button" class="btn btn-light btn-costume-lg" onclick="calculate('%')">&#x25;</button>
+            </div>
+            <div class="col-sm-3 w-25 p-3 text-center">
+                <button type="button" class="btn btn-operator btn-costume-lg" onclick="calculate('/')">&#247;</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 w-25 p-3 text-center">
+                <button type="button" class="btn btn-light btn-costume-lg" onclick="calculate(7);">7</button>
+            </div>
+            <div class="col-sm-3 w-25 p-3 text-center">
+                <button  type="button" class="btn btn-light btn-costume-lg" onclick="calculate(8);">8</button>
+            </div>
+            <div class="col-sm-3 w-25 p-3 text-center">
+                <button type="button" class="btn btn-light btn-costume-lg" onclick="calculate(9);">9</button>
+            </div>
+            <div class="col-sm-3 w-25 p-3 text-center">
+                <button type="button" class="btn btn-operator btn-costume-lg" onclick="calculate('*');">&#215;</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 w-25 p-3 text-center">
+                <button type="button" class="btn btn-light btn-costume-lg" onclick="calculate(4);">4</button>
+            </div>
+            <div class="col-sm-3 w-25 p-3 text-center">
+                <button type="button" class="btn btn-light btn-costume-lg" onclick="calculate(5);">5</button>
+            </div>
+            <div class="col-sm-3 w-25 p-3 text-center">
+                <button type="button" class="btn btn-light btn-costume-lg" onclick="calculate(6);" >6</button>
+            </div>
+            <div class="col-sm-3 w-25 p-3 text-center">
+                <button type="button" class="btn btn-operator btn-costume-lg" onclick="calculate('+');">&#43;</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 w-25 p-3 text-center">
+                <button type="button" class="btn btn-light btn-costume-lg" onclick="calculate(1);">1</button>
+            </div>
+            <div class="col-sm-3 w-25 p-3 text-center">
+                <button type="button" class="btn btn-light btn-costume-lg" onclick="calculate(2);">2</button>
+            </div>
+            <div class="col-sm-3 w-25 p-3 text-center">
+                <button type="button" class="btn btn-light btn-costume-lg" onclick="calculate(3);">3</button>
+            </div>
+            <div class="col-sm-3 w-25 p-3 text-center">
+                <button type="button" class="btn btn-operator btn-costume-lg" onclick="calculate('-');">&#8722;</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 w-50 p-3 text-center">
+                <button type="button" class="btn btn-light btn-costume-lg" onclick="calculate(0);" style="width: 246px" >0</button>
+            </div>
+            <div class="col-sm-3 w-25 p-3 text-center">
+                <button type="button" class="btn btn-light btn-costume-lg" onclick="calculate('.');">.</button>
+            </div>
+            <div class="col-sm-3 w-25 p-3 text-center">
+                <button type="button" class="btn btn-operator btn-costume-lg" onclick="equals();" >&#61;</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/script.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/bootstrap.esm.js"></script>
+<script src="js/bootstrap.js"></script>
+</html>
