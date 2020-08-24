@@ -20,6 +20,7 @@ body{
     font-size: 80px;
     border-radius: 12px;
     margin-left: 15px;
+    text-align: right;
 }
 .btn.btn-costume-lg {
     font-size: 24px;
@@ -29,6 +30,7 @@ body{
 }
 .btn.btn-operator {
     background-color: #ffa07a;
+    direction: rtl;
 }
 .btn-operator:hover {
     color: #fff;
